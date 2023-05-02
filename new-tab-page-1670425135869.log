@@ -1,0 +1,13 @@
+DevTools failed to load source map: Could not load content for chrome-extension://cfhdojbkjhnklbpkdaibdccddilifddb/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
+let city = "Kherson"
+undefined
+let country = "Ukraine"
+undefined
+sentence = "I am from "
+'I am from '
+let = sentence+country+city
+'I am from UkraineKherson'
+let city= " Kherson"
+undefined
+let= sentence+country+city
+'I am from Ukraine Kherson'

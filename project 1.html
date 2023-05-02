@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧘‍♀️Yoga</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        color: #5b86e9;
+        font-size: 44px;
+        margin: 0 auto;
+        border: 1px solid#5b86e9;
+        border-radius: 5px;
+        padding: 22px;
+      }
+      h2 {
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        color: black;
+        font-size: 30px;
+        margin: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 40px 100px;
+        max-width: 100%;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      a {
+        color: #5b86e9;
+      }
+      .container {
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .information {
+        margin-top: 20px;
+        padding: 20px;
+        margin: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #5b86e9;
+      }
+      .information:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #fff;
+        color: #5b86e9;
+        font-size: 60px;
+        line-height: 22px;
+        padding: 40px 110px;
+        border-radius: 8px 15px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 80, 0.1);
+        border: 2px solid #ffffff;
+      }
+      button:hover {
+        background: #5b86e9;
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+      }
+
+      .down {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Yoga</h1>
+      <h2>Yoga for freedom</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/013/original/yoga.jpg?1671138223"
+      />
+
+      <p>
+        You could say that <span style="color: #5b86e9">freedom</span> is one of
+        the goals of a<strong> yoga practice </strong>. This might be as simple
+        as feeling that your shoulders are a bit looser after a class or perhaps
+        you find yourself free of stress for a short while afterwards. With
+        repeated, consistent practice, we can experience greater and greater
+        <em> freedom </em>, both to move our body and in the way we think and
+        behave.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Yoga"
+        target="_blank"
+        class="information"
+      >
+        Information on Wikipedia
+      </a>
+
+      <button class="visit-button">🧘‍♀️ Visit Yoga Class</button>
+      <br />
+      <hr />
+      <p class="down">
+        This page was made by
+        <a
+          href="https://www.linkedin.com/in/nataly-tsalko-5a1440103//"
+          target="_blank"
+        >
+          Natalia Tsalko
+        </a>
+      </p>
+    </div>
+    <script>
+      function contactUs() {
+        let nameUser = prompt("What is your first name?");
+        let ageUser = prompt("What is your age?");
+        if (ageUser < 18) {
+          alert(
+            "Sorry " +
+              nameUser +
+              " , you can't get our class from youga. Ask your parents to join us."
+          );
+        } else {
+          alert(
+            "Thanks " + nameUser + " , we will be intouch. Meanwhile, Namaste."
+          );
+        }
+      }
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
